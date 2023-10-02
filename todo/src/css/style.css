@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  background: #6190E8;
+  background: linear-gradient(to right, #A7BFE8, #6190E8);
+}
+#container #input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+#container #input-box input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: #A7BFE8;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 15px;
+}
+#container #input-box button {
+  height: 50px;
+  width: 150px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  background-color: #A7BFE8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#container #input-box button:hover {
+  background-color: rgba(97, 144, 232, 0.4666666667);
+}
+#container #drop-Boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 900px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+#container #drop-Boxes div {
+  width: 30%;
+  background-color: #A7BFE8;
+  text-align: center;
+  border-radius: 8px;
+  height: 500px;
+}
+#container #drop-Boxes div .task {
+  height: auto !important;
+  background-color: rgba(97, 144, 232, 0.4666666667);
+  width: 100%;
+  margin: 10px 0;
+}
+#container #drop-Boxes div .completed-task {
+  text-decoration: line-through !important;
+}/*# sourceMappingURL=style.css.map */

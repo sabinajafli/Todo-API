@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+    overflow-y: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+#searchBox {
+    width: 500px;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #0C356A;
+    line-height: 75px;
+    margin: 50px 200px;
+}
+
+::placeholder {
+    color: #0C356A;
+    opacity: .4;
+}
+
+#searchInput {
+    width: 400px;
+    height: 65px;
+    border: none;
+    font-size: 25px;
+    color: #0C356A;
+    background-color: transparent;
+}
+
+#searchBtn {
+    color: #EEEEEE;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0C356A;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease-out;
+}
+
+#searchBtn:hover {
+    border: 1px solid #0C356A;
+    background-color: transparent;
+    color: #0C356A;
+}
+
+#notFound {
+    display: none;
+}
+
+#notFound img{
+    margin-left: 60px;
+    width: 450px;
+}
+
+.all {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#weatherBox {
+    margin-left: 200px;
+    width: 450px;
+    text-align: center;
+}
+
+#weatherBox img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#weatherInfoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10%;
+}
+
+#weatherInfoBox h2 {
+    margin: 25px 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #0C356A;
+}
+
+#weatherInfoBox h2:first-letter {
+    text-transform: uppercase;
+}
+
+#weatherInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 210px;
+}
+
+.humidity {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #0C356A;
+}
+
+.humidity span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.wind {
+    display: flex;
+    gap: 20px;
+    color: #0C356A;
+    align-items: center;
+}
+
+.wind i {
+    font-size: 20px;
+}
+
+.temprature {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #0C356A;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 30px;
+    color: #0C356A;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #container {
+        height: 100svh;
+        display: block;
+    }
+
+    .all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+
+    #searchBox {
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #0C356A;
+    line-height: 50px;
+    margin-top: 30px;
+    }
+
+    #searchInput {
+    width: 230px;
+    height: 46px;
+    border: none;
+    font-size: 15px;
+    color: #0C356A;
+    background-color: transparent;
+    }
+
+    #searchBtn {
+    color: #EEEEEE;
+    font-size: 15px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #0C356A;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease-out;
+    }
+
+    #notFound img {
+        margin-left: 0;
+        width: 300px;
+    }
+
+    #weatherBox {
+    margin-left: 0;
+    width: 300px;
+    text-align: center;
+    }
+
+    #weatherBox img {
+        width: 120px;
+        margin-bottom: 0;
+    }
+
+    #weatherInfoBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    #weatherInfo {
+        width: 300px;
+        gap: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    #weatherInfoBox {
+        margin-left: 2%;
+    }
+
+    #weatherInfo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1924px) {
+    #weatherInfoBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 18%;
+    }
+}
+
+
+
